@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "NorthWind Products";
+}
+
+<div class="form-field">
+    <label>Id:</label>
+    <div>
+        <input type="text" id="id"  />
+    </div>
+</div>
+<div class="form-field">
+    <label>Nombre:</label>
+    <div>
+        <input type="text" id="name" />
+    </div>
+</div>
+<div class="form-field">
+    <label>Precio Unitario:</label>
+    <div>
+        <input type="text" id="unitPrice" />
+    </div>
+</div>
+
+<div class="form-field" style="margin: 20px 0px">
+    <button class=" btn btn-primary" id="addProduct">Agregar un producto</button>
+    <button class=" btn btn-primary" id="showProducts">Mostrar Productos</button>
+    <button class=" btn btn-primary" id="findById">Buscar por Id</button>
+    <button class=" btn btn-primary" id="updateProduct">Modificar producto</button>
+    <button class=" btn btn-primary" id="deleteProduct">Eliminar producto</button>
+</div>
+
+<div id="message"></div>
+
+<div>
+    <table id="products" class="table table-bordered table-striped table-hover table-sm">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+</div>
+
